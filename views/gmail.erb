@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gmail - clone</title>
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="../../../font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class="container myContainer">
+		<div class="row row--top">
+			<div class="col-sm-2 col--logo">
+				<img src="https://www.google.com/images/srpr/logo11w.png" class="col__img--logo">
+			</div>
+			<div class="col-sm-6 col--search">
+				<!-- searchbar -->
+				<div class=" input-group searchbar">
+                	<input type="text" class="form-control" placeholder="Search for...">
+                	<span class="input-group-btn">
+                		<button class="btn btn-primary" type="button">search<i class="fa fa-serch fa-items"></i></button>
+                	</span>
+                </div> 
+			</div>
+			<div class="col-sm-4 col--icons">
+				<!-- funny little icons -->
+				<span>+Nizar</span>
+				<img src="img/row2_icons.png" class="row2__icons">
+			</div>
+		</div>
+		<div class="row row--row2">
+			<div class="col-sm-2 col__gmail">
+				<span class="font--gmail font--bold">Gmail <span class="downArr">&dtrif;</span></span>
+			</div>
+			<div class="col-sm-10 col--btns js-col__btns--unchecked">
+				<button class="btn btn-default">x  <span class="downArr">&dtrif;</span></button>
+				<button class="btn btn-default">O</button>
+				<button class="btn btn-default">More<span class="downArr">&dtrif;</span></button>
+			</div>
+
+			<div class="col-sm-10 col--btns js-col__btns--checked">
+				<button class="btn btn-default">Mark  <span class="downArr">&dtrif;</span></button>
+				<button class="btn btn-danger js-btn--delete">Delete</button>
+				<button class="btn btn-default">More<span class="downArr">&dtrif;</span></button>
+				<button class="btn btn-default">Other<span class="downArr">&dtrif;</span></button>
+				<button class="btn btn-default">XYZ<span class="downArr">&dtrif;</span></button>
+			</div>
+		</div>
+		<div class="row row--separator" />
+		<div class="row row--main">
+
+			<div class="col-sm-2 col__box--left">
+				<ul>
+					<li><button class="btn btn-danger btn--compose js-btn--compose">COMPOSE</button></li>
+					<li class="font--red font--bold">Inbox (44)</li>
+					<li>Sent Mail</li>
+					<li class="font--bold">Drafts (7)</li>
+					<li>All Mail</li>
+					<li>Spam</li>
+					<li>Estimates</li>
+				</ul>
+			</div>
+			<div class="col-sm-10 col__box--main">
+<!-- 				<div class="row">
+					another menu-bar disabled for now...
+				</div>
+ -->				<!-- email 1 -->
+				<div class="row row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="">Ariel, Katie, Nizar, <span class="font--bold">Nora</span> (5)</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="font--bold">Re: Blogs for next week</span> Great, thank you! 
+						<span class="mail--date font--bold">9:04 am</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator"></div>
+
+				<!-- email 2 -->
+				<div class="row row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="font--bold">Xavi from Ironhack</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="font--bold">Ironhack - confirmation second interview</span> - Thank you, we have... 
+						<span class="mail--date font--bold">12:26 am</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator"></div>
+
+				<!-- email 3 -->
+				<div class="row row__email js-row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="">Leticia Iglesias</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="">otra foto</span>  
+						<span class="mail--date">5:57 pm</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator"></div>
+
+				<!-- email 4 -->
+				<div class="row row__email js-row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="">Leticia Iglesias</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="">fotos - Estaba buscando ........</span>  
+						<span class="mail--date">5:54 pm</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator"></div>
+
+				<!-- email 5 -->
+				<div class="row row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="font--bold">Xavi from Ironhack</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="font--bold">Ironhack - confirmation second interview</span> - Thank you, we have... 
+						<span class="mail--date font--bold">Jan 27</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator" ></div>
+
+				<!-- email 6 -->
+				<div class="row row__email">
+					<div class="col-sm-4 col__email--from">
+						<input type="checkbox" class="cb--mail js-mail-cb">
+						<span class="font--bold">Xavi from Ironhack</span>
+					</div>
+					<div class="col-sm-8 col__email--head">
+						<span class="font--bold">Ironhack - confirmation second interview</span> - Thank you, we have... 
+						<span class="mail--date font--bold">Jan 26</span> 
+					</div>
+				</div>
+				<div class="row row--separator js-row__separator"></div>
+			</div>
+		</div>	
+	</div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="gmail.js"></script>
+</body>
+</html>
+

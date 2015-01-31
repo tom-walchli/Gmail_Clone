@@ -1,0 +1,126 @@
+.myContainer div {
+ 	/*border:1px solid #bbbbbb;*/
+}
+
+.row--top {
+	background-color: #eeeeee;
+}
+
+.col--logo {
+	padding-top: 15px;
+}
+
+.col__img--logo {
+	width: 100px;
+}
+
+.col--search {
+	padding-top: 10px;
+}
+
+.searchbar {
+	width: 100%
+}
+
+.col--icons {
+	float: right;
+}
+
+.row--row2 {
+ 	padding: 10px;
+}
+
+.row--separator {
+	background-color: #dddddd;
+	height: 2px;
+}
+
+.row--row2 button {
+	width: 80px;
+	padding-right: 15px;
+}
+
+.col--gmail {
+
+}
+
+.col--btns {
+
+}
+
+.row--main {
+
+}
+
+.col__box--left {
+	
+}
+
+.col__box--left ul {
+	list-style-type : none;
+	padding-left: 0;
+}
+
+.col__box--left li {
+	padding-top: 3px;
+}
+
+.col__box--main {
+	padding-top: 10px;
+}
+
+.row__email {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.col__email--from {
+	
+}
+
+.col__email--head {
+	
+}
+
+.cb--mail {
+	padding-top: 20px;
+}
+
+.font--red {
+	color: red;
+}
+
+.font--bold {
+	font-weight: bold;
+}
+
+.font--gmail {
+	color: red;
+	font-size: 20px;
+}
+
+.btn--compose {
+	width: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mail--date {
+	float: right;
+}
+
+.js-row__email {
+	background-color: #eeeeee;
+}
+
+.bg--yellow {
+	background-color: yellow;
+}
+
+.showing {
+	display:block;
+}
+
+.hidden {
+	display:none;
+}
