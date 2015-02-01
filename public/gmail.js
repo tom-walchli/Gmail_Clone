@@ -1,11 +1,15 @@
 // The number of checked emails
 var checked = 0;
 
+// Number of mails 'sent'
+var sent = 0
+
 $('.js-mail-cb').on('click', switchBtnBar);
 $('.js-btn--delete').on('click', removeAndArchive);
 $('.js-btn--compose').on('click', function(){
-	window.open();
+	window.open("compose", "compose","width=350,height=450");
 });
+$('.js-btn--send').on('click', sendMail);
 
 var checkedBtns 	= $('.js-col__btns--checked');
 var uncheckedBtns 	= $('.js-col__btns--unchecked');
@@ -16,7 +20,8 @@ var uncheckedBtns 	= $('.js-col__btns--unchecked');
 // (and 'hidden' removed...)  
 handleBtnBar();
 
-function switchBtnBar(){
+function switchBtnBar()
+{
 	var grandParent = $(this).parent().parent();
 	if(this.checked){
 		checked++;
@@ -28,7 +33,8 @@ function switchBtnBar(){
 	handleBtnBar();
 }
 
-function handleBtnBar(){
+function handleBtnBar()
+{
 	if (checked > 0){
 		checkedBtns.removeClass('hidden');
 		checkedBtns.addClass('showing');
@@ -43,20 +49,23 @@ function handleBtnBar(){
 }
 
 // loop over all emails, if checked, remove from DOM and archive  
-function removeAndArchive(){
-	console.log("Hello!!")
+function removeAndArchive()
+{
 	$('.col__box--main').children().each(function(){
 		if ($(this).hasClass("js-row__separator")) return;
 		var input = $(this).find('input')[0];
 		if ($(input).prop('checked') === true){
 		 	archive($(this));
 		 	$(this).remove();
+		 	checked--;
 		}	
 	});
+	handleBtnBar();
 }
 
 // dump the item into /logs/gmail.log
-function archive(item){
+function archive(item)
+{
 	var from = clean(item.find('.col__email--from').text());
 	var head = clean(item.find('.col__email--head').text());
 	data = {from:from, head:head};
@@ -71,3 +80,26 @@ function clean(input){
 	return input.split('\t').join('').split('\n').join('');
 }
 
+function sendMail()
+{
+	data = {
+		to 		: $('#js-email--to').val(),
+		subject : $('#js-email--subject').val(),
+		content : $('#js-email--content').val()
+	};
+	var request = $.post('send',data);
+	request.done(function (data) {
+		console.log(data);
+	});
+	update();
+}
+
+// turn 'Sent Mail' bold and add number of mails sent
+function update()
+{
+	sent++;
+	var sentMail = window.opener.$('#sentMail');
+	sentMail.addClass('font--bold');
+	sentMail.text('Sent Mail (' + sent.toString() + ')');
+	window.close('compose');
+}

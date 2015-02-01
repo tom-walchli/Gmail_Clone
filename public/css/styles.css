@@ -124,3 +124,29 @@
 .hidden {
 	display:none;
 }
+
+/*==========================*/
+/*Compose*/
+/*==========================*/
+
+.email {
+	width: 100%;
+	max-width: 600px;
+}
+
+.email--to {
+
+}
+
+.email--subject {
+
+}
+
+.email--content {
+	height: 270px;
+}
+
+.email--label {
+	font-weight: bold;
+}
+

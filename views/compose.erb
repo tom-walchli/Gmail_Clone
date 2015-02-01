@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gmail - Compose mail</title>
+	<!-- Latest compiled and minified CSS -->
+
+	<!-- <link rel="stylesheet" href="../../font-awesome-4.3.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class="container myContainer">
+		<div class="row row--to">
+			<div class="col-sm-2 col--left">
+				<label for="js-email--to" class="email--label">To:</label>					
+			</div>
+			<div class="col-sm-10 col--left">
+				<input id="js-email--to" class="email email--to ">
+			</div>
+		</div>
+		<div class="row row--subject">
+			<div class="col-sm-2 col--left">
+				<label for="js-email--subject" class="email--label">Subject:</label>			
+			</div>
+			<div class="col-sm-10 col--left">
+				<input id="js-email--subject" class="email email--subject ">
+			</div>
+		</div>
+		<div class="row row--content">
+			<div class="col-sm-2 col--left">
+				<label for="js-email--content" class="email--label">Content:</label>	
+			</div>
+			<div class="col-sm-10 col--left">
+				<textarea id="js-email--content" class="email email--content"></textarea>
+			</div>
+		</div>
+		<button class="btn btn-primary js-btn--send">Send</button>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="gmail.js"></script>
+</body>
+</html>

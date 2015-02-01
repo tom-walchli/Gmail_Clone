@@ -14,6 +14,16 @@ end
 
 post '/archive' do
 	logger.info("Email deleted: #{params}")
-	'Success email deleted and archived...'
+	'Success: email deleted and archived...'
+end
+
+get '/compose' do
+	logger.info("opening compose window")
+	erb :compose	
+end
+
+post '/send' do
+	logger.info("Email sent: #{params}")
+	'Success: email sent...'
 end
 
