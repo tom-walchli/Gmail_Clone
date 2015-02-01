@@ -109,7 +109,7 @@
 	float: right;
 }
 
-.js-row__email {
+.row__email--read {
 	background-color: #eeeeee;
 }
 
@@ -150,3 +150,31 @@
 	font-weight: bold;
 }
 
+.ad--left {
+/*	float: left;
+	display: inline;
+*/	
+	/* tired of trying to figure out how to float this one...*/
+	position: absolute;
+	left:100px;
+	top:3px;
+
+}
+
+.ad--close {
+	font-size: 24px;
+	color: #999999;
+	border: 0 solid #ffeeee;
+	/*padding-bottom: 15px;*/
+	background-color: #ffeeee;
+}
+
+.icon__check--red {
+	width: 60px;
+	padding-left: 10px;
+	margin: 0;
+}
+
+.row--ad {
+	background-color: #ffeeee;
+}
